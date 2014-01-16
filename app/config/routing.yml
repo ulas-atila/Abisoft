@@ -1,0 +1,4 @@
+abisoft:
+    resource: "@AbisoftBundle/Resources/config/routing.yml"
+    prefix:   /
+
