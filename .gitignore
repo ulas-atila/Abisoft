@@ -7,3 +7,6 @@ UPGRADE.md
 composer.json
 composer.lock
 app/cache/
+app/config/parameters.yml
+app/logs/
+app/logs/dev.log
