@@ -77,5 +77,16 @@ class Module
         return $this->application;
     }
 
+/**
+     * Set application
+     *
+     * @param Application $application
+     */
+    public function setApplication($application)
+    {
+        $this->application = $application;
+    }
+
+
 
 }

@@ -102,4 +102,15 @@ class Setting
         return $this->module;
     }
 
+    /**
+     * Set module
+     *
+     * @param Module $module
+     */
+    public function setModule($module)
+    {
+        $this->module = $module;
+    }
+
+
 }
