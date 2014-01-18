@@ -74,4 +74,14 @@ class Application
     {
         return $this->user;
     }
+
+    /**
+     * Set user
+     *
+     * @param Abisoft\AbisoftBundle\Entity\User $user
+     */
+    public function setUser($user)
+    {
+        $this->user = $user;
+    }
 }
