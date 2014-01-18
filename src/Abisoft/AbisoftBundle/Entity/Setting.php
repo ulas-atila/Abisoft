@@ -21,6 +21,26 @@ class Setting
      */
     private $id;
 
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="name", type="string", length=255)
+     */
+    private $name;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="name", type="string", length=255)
+     */
+    private $value;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="Abisoft\AbisoftBundle\Entity\Module")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $module;
+
 
     /**
      * Get id
@@ -31,4 +51,55 @@ class Setting
     {
         return $this->id;
     }
+
+    /**
+     * Get name
+     *
+     * @return string 
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * Set name
+     *
+     * @param string $name
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+    }
+
+    /**
+     * Get value
+     *
+     * @return string 
+     */
+    public function getValue()
+    {
+        return $this->value;
+    }
+
+    /**
+     * Set value
+     *
+     * @param string $value
+     */
+    public function setValue($value)
+    { 
+        $this->value = $value;
+    }
+
+    /**
+     * Get module
+     *
+     * @return Abisoft\AbisoftBundle\Entity\Module 
+     */
+    public function getModule()
+    {
+        return $this->module;
+    }
+
 }
