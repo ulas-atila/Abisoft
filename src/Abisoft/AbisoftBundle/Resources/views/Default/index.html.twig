@@ -4,6 +4,11 @@
 
 {% block stylesheets %}
     {{ parent() }}
+    {% stylesheets debug=false filter='lessphp' output='css/style.css'
+    '@AbisoftBundle/Resources/public/css/style.less'
+    %}
+        <link rel="stylesheet" href="{{ asset_url }}" />
+    {% endstylesheets %}
     <link href="{{ path('css_default', { 'color': bg_color }) }}" rel="stylesheet" type="text/css">
 {% endblock %}
 

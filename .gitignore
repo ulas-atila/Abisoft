@@ -5,6 +5,8 @@ UPGRADE-2.3.md
 UPGRADE-2.4.md
 UPGRADE.md
 composer.lock
+web/css/
+web/js/
 app/cache/
 app/config/parameters.yml
 app/logs/
