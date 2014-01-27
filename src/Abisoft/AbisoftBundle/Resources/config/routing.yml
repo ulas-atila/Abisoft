@@ -1,3 +1,6 @@
 abisoft_homepage:
-    pattern:  /hello/{name}
+    pattern:  /hello/{color}
     defaults: { _controller: AbisoftBundle:Default:index }
+css_default:
+    pattern:  /style/{color}
+    defaults: { _controller: AbisoftBundle:Css:default }

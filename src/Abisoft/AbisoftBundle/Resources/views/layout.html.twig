@@ -1,5 +1,14 @@
 {% extends "base.html.twig" %}
 
+{% block meta %}
+    {{ parent() }}
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0"/>
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+{% endblock %}
+
 {% block title 'Test' %}
 
 {% block body %}
