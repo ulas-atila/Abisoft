@@ -2,6 +2,11 @@
 
 {% block title "Test 2 Test" %}
 
+{% block stylesheets %}
+    {{ parent() }}
+    <link href="{{ path('css_default', { 'color': bg_color }) }}" rel="stylesheet" type="text/css">
+{% endblock %}
+
 {% block content %}
-	Hello {{ name }}!
+	Hello Ulas!
 {% endblock %}
