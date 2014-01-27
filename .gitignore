@@ -10,3 +10,5 @@ app/config/parameters.yml
 app/logs/
 app/logs/dev.log
 vendor/
+*.cache
+web/bundle/
